@@ -451,6 +451,8 @@ GameObject:
   - component: {fileID: 565831198}
   - component: {fileID: 565831200}
   - component: {fileID: 565831199}
+  - component: {fileID: 565831202}
+  - component: {fileID: 565831201}
   m_Layer: 5
   m_Name: Store Panel
   m_TagString: Untagged
@@ -520,6 +522,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 565831197}
   m_CullTransparentMesh: 0
+--- !u!114 &565831201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565831197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -57143145, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 02bd26705a888d4418d8b7df5dea8aea, type: 2}
+--- !u!114 &565831202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565831197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
 --- !u!1 &584702038
 GameObject:
   m_ObjectHideFlags: 0
@@ -864,15 +897,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"GameManager","summary":null,"pan":{"x":-49.34065,"y":-101.9866},"zoom":0.2999999,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-256.0,"y":-317.0},"guid":"5a9b6965-65ec-4f9f-a94b-4a44904f79b9","$version":"A","$type":"Bolt.Start","$id":"10"},{"type":"System.Single","value":{"$content":1.0,"$type":"System.Single"},"defaultValues":{},"position":{"x":-49.0,"y":272.0},"guid":"39beb21c-bf93-426b-97ee-0efa1dfaa485","$version":"A","$type":"Bolt.Literal","$id":"12"},{"chainable":false,"member":{"name":"text","parameterTypes":null,"targetType":"UnityEngine.UI.Text","targetTypeName":"UnityEngine.UI.Text","$version":"A"},"defaultValues":{"target":{"$content":0,"$type":"UnityEngine.Object"},"input":{"$content":"Hello
-      World!","$type":"System.String"}},"position":{"x":-26.0,"y":-317.0},"guid":"131d335b-fc5b-48c0-80fc-9b9d4be31933","$version":"A","$type":"Bolt.SetMember","$id":"14"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"Money","$type":"System.String"},"object":null},"position":{"x":-579.0,"y":-201.0},"guid":"9eac9187-a5e2-47d5-92e3-066033dcdda8","$version":"A","$type":"Bolt.GetVariable","$id":"17"},{"defaultValues":{"duration":{"$content":3.0,"$type":"System.Single"},"unscaledTime":{"$content":false,"$type":"System.Boolean"}},"position":{"x":-458.0,"y":53.0},"guid":"4c9fcc94-d0c1-4c25-8487-b91ce2a7bec7","$version":"A","$type":"Bolt.Timer","$id":"19"},{"coroutine":false,"defaultValues":{"target":{"$content":1,"$type":"UnityEngine.Object"}},"position":{"x":-676.0,"y":51.0},"guid":"85b0991e-cc0f-44cc-9aac-10948fda5df2","$version":"A","$type":"Bolt.OnButtonClick","$id":"21"},{"chainable":false,"member":{"name":"value","parameterTypes":null,"targetType":"UnityEngine.UI.Slider","targetTypeName":"UnityEngine.UI.Slider","$version":"A"},"defaultValues":{"target":{"$content":2,"$type":"UnityEngine.Object"},"input":{"$content":0.0,"$type":"System.Single"}},"position":{"x":-191.0,"y":183.0},"guid":"a4ee58a0-a81b-460c-a784-83c062bcaa1d","$version":"A","$type":"Bolt.SetMember","$id":"23"},{"defaultValues":{},"position":{"x":75.0,"y":160.0},"guid":"062ee295-74e3-4eaf-b7f1-6d0219c3ec6c","$version":"A","$type":"Bolt.GenericAdd","$id":"26"},{"kind":"Object","defaultValues":{"name":{"$content":"Money","$type":"System.String"},"object":null},"position":{"x":168.0,"y":14.0},"guid":"2e6cd60a-b975-4694-a4a5-2d8ff21c68b3","$version":"A","$type":"Bolt.SetVariable","$id":"28"},{"chainable":false,"member":{"name":"value","parameterTypes":null,"targetType":"UnityEngine.UI.Slider","targetTypeName":"UnityEngine.UI.Slider","$version":"A"},"defaultValues":{"target":{"$content":3,"$type":"UnityEngine.Object"},"input":{"$content":0.0,"$type":"System.Single"}},"position":{"x":-188.0,"y":30.0},"guid":"fb71af07-1426-414a-aa11-41e2c019f246","$version":"A","$type":"Bolt.SetMember","$id":"30"},{"chainable":false,"member":{"name":"ToString","parameterTypes":[],"targetType":"System.Single","targetTypeName":"System.Single","$version":"A"},"defaultValues":{"target":{"$content":0.0,"$type":"System.Single"}},"position":{"x":-257.0,"y":-221.0},"guid":"5f16e666-f4a5-4f68-8369-6431a5a7627a","$version":"A","$type":"Bolt.InvokeMember","$id":"33"},{"sourceUnit":{"$ref":"21"},"sourceKey":"trigger","destinationUnit":{"$ref":"19"},"destinationKey":"start","guid":"ee043546-653f-44c1-bf6c-69811a082bb3","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"33"},"sourceKey":"exit","destinationUnit":{"$ref":"14"},"destinationKey":"assign","guid":"96b75cce-db6c-423f-a79f-f80007591ee3","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"28"},"sourceKey":"assigned","destinationUnit":{"$ref":"33"},"destinationKey":"enter","guid":"8c12213d-0f54-42b8-b335-623f46257e1a","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"tick","destinationUnit":{"$ref":"23"},"destinationKey":"assign","guid":"1f724711-d3be-4973-b03f-1741331969a8","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"10"},"sourceKey":"trigger","destinationUnit":{"$ref":"14"},"destinationKey":"assign","guid":"d6728c7c-b3ab-4860-b61d-292734b32beb","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"completed","destinationUnit":{"$ref":"30"},"destinationKey":"assign","guid":"eec5db63-f323-44f8-b983-e137cdcab82a","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"30"},"sourceKey":"assigned","destinationUnit":{"$ref":"28"},"destinationKey":"assign","guid":"2244f581-4db9-4570-9709-662f811be178","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"17"},"sourceKey":"value","destinationUnit":{"$ref":"33"},"destinationKey":"target","guid":"9dd2a4b7-1979-4e44-871b-48a23106d65f","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"33"},"sourceKey":"result","destinationUnit":{"$ref":"14"},"destinationKey":"input","guid":"87fb8ac0-7641-408f-b1f3-0f650ed42def","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"17"},"sourceKey":"value","destinationUnit":{"$ref":"26"},"destinationKey":"a","guid":"5bcad05f-50dc-4d03-85ef-fe729b5a0cff","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"12"},"sourceKey":"output","destinationUnit":{"$ref":"26"},"destinationKey":"b","guid":"6fd4c5fc-d98c-45f3-9772-ac62515178ca","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"26"},"sourceKey":"sum","destinationUnit":{"$ref":"28"},"destinationKey":"input","guid":"ef62dfa5-a484-40f3-ba16-1cfe6fc84de1","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"elapsedRatio","destinationUnit":{"$ref":"23"},"destinationKey":"input","guid":"0c78d96e-056f-49e1-81b0-40b17c29df15","$type":"Bolt.ValueConnection"},{"position":{"xMin":-617.0,"yMin":-352.0,"xMax":155.0,"yMax":-84.0},"label":"Update
-      the Money Text UI","comment":null,"color":{"r":0.0,"g":0.0,"b":0.0,"a":1.0},"guid":"4390da24-edf9-4d50-af01-436361041802","$version":"A","$type":"Ludiq.GraphGroup"},{"position":{"xMin":-700.0,"yMin":-38.0,"xMax":330.0,"yMax":403.0},"label":"Click
-      Button - Make Money","comment":null,"color":{"r":0.0,"g":0.0,"b":0.0,"a":1.0},"guid":"fd07010e-4060-45df-9d3e-2cd3bfefb9dc","$version":"A","$type":"Ludiq.GraphGroup"}],"$version":"A"}}}'
+    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"GameManager","summary":null,"pan":{"x":-49.34065,"y":-101.9866},"zoom":0.2999999,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-256.0,"y":-317.0},"guid":"5a9b6965-65ec-4f9f-a94b-4a44904f79b9","$version":"A","$type":"Bolt.Start","$id":"10"},{"chainable":false,"member":{"name":"ToString","parameterTypes":[],"targetType":"System.Single","targetTypeName":"System.Single","$version":"A"},"defaultValues":{"target":{"$content":0.0,"$type":"System.Single"}},"position":{"x":-257.0,"y":-221.0},"guid":"5f16e666-f4a5-4f68-8369-6431a5a7627a","$version":"A","$type":"Bolt.InvokeMember","$id":"12"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"Money","$type":"System.String"},"object":null},"position":{"x":-579.0,"y":-201.0},"guid":"9eac9187-a5e2-47d5-92e3-066033dcdda8","$version":"A","$type":"Bolt.GetVariable","$id":"15"},{"chainable":false,"member":{"name":"text","parameterTypes":null,"targetType":"UnityEngine.UI.Text","targetTypeName":"UnityEngine.UI.Text","$version":"A"},"defaultValues":{"target":{"$content":0,"$type":"UnityEngine.Object"},"input":{"$content":"Hello
+      World!","$type":"System.String"}},"position":{"x":-26.0,"y":-317.0},"guid":"131d335b-fc5b-48c0-80fc-9b9d4be31933","$version":"A","$type":"Bolt.SetMember","$id":"17"},{"sourceUnit":{"$ref":"10"},"sourceKey":"trigger","destinationUnit":{"$ref":"17"},"destinationKey":"assign","guid":"d6728c7c-b3ab-4860-b61d-292734b32beb","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"12"},"sourceKey":"exit","destinationUnit":{"$ref":"17"},"destinationKey":"assign","guid":"96b75cce-db6c-423f-a79f-f80007591ee3","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"12"},"sourceKey":"result","destinationUnit":{"$ref":"17"},"destinationKey":"input","guid":"87fb8ac0-7641-408f-b1f3-0f650ed42def","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"value","destinationUnit":{"$ref":"12"},"destinationKey":"target","guid":"9dd2a4b7-1979-4e44-871b-48a23106d65f","$type":"Bolt.ValueConnection"},{"position":{"xMin":-617.0,"yMin":-352.0,"xMax":155.0,"yMax":-84.0},"label":"Update
+      the Money Text UI","comment":null,"color":{"r":0.0,"g":0.0,"b":0.0,"a":1.0},"guid":"4390da24-edf9-4d50-af01-436361041802","$version":"A","$type":"Ludiq.GraphGroup"}],"$version":"A"}}}'
     _objectReferences:
     - {fileID: 329045765}
-    - {fileID: 1029044948}
-    - {fileID: 524706248}
-    - {fileID: 524706248}
 --- !u!114 &936534074
 MonoBehaviour:
   m_ObjectHideFlags: 0
