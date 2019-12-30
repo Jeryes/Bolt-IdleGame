@@ -770,7 +770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"StoreProfit","value":{"$content":3.0,"$type":"System.Single"},"$version":"A"},{"name":"StoreTimer","value":{"$content":1,"$type":"System.Int32"},"$version":"A"},{"name":"StoreCount","value":{"$content":0,"$type":"System.Int32"},"$version":"A"},{"name":"StoreCost","value":{"$content":-3.0,"$type":"System.Single"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"StoreProfit","value":{"$content":3.0,"$type":"System.Single"},"$version":"A"},{"name":"StoreTimer","value":{"$content":1,"$type":"System.Int32"},"$version":"A"},{"name":"StoreCount","value":{"$content":0,"$type":"System.Int32"},"$version":"A"},{"name":"StoreCost","value":{"$content":-3.0,"$type":"System.Single"},"$version":"A"},{"name":"StoreName","value":null,"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
 --- !u!114 &1577509324307761065
 MonoBehaviour:
